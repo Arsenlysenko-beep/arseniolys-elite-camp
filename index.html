@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arseniolys Elite Camp</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#101629;color:white;text-align:center}
+header{padding:45px 15px;background:linear-gradient(135deg,#00c896,#1769ff)}
+h1{font-size:36px;margin:10px 0}
+h2{color:#64ffd5}
+main{max-width:750px;margin:auto;padding:20px}
+.card{background:#1d2942;margin:18px 0;padding:22px;border-radius:20px}
+button,.btn{display:inline-block;border:0;border-radius:12px;padding:14px 20px;background:#00d6a0;color:#071a22;font-size:16px;font-weight:bold;text-decoration:none;margin:6px;cursor:pointer}
+input,textarea,select{display:block;width:100%;padding:12px;margin:10px 0;border-radius:8px;border:0;font-size:16px}
+label{display:block;text-align:left;margin-top:10px}
+.hidden{display:none}
+footer{padding:25px;color:#bbc7dd}
+</style>
+</head>
+<body>
+<header>
+<p>🏕️ ROBLOX • BROOKHAVEN</p>
+<h1>Arseniolys Elite Camp</h1>
+<p>Твій Roblox-відпочинок мрії 💚</p>
+<a class="btn" href="https://t.me/+h1R0pJNHadFlMjIy">💬 Наш Telegram</a>
+</header>
+
+<main>
+<section class="card">
+<h2>🌟 Ласкаво просимо!</h2>
+<p>Приєднуйся до нашого табору в Brookhaven! На тебе чекають веселі пригоди, нові друзі та цікаві активності.</p>
+<p><b>🎮 Roblox:</b> Arseniolyselitecamp</p>
+</section>
+
+<section class="card">
+<h2>🎟️ Як приєднатися?</h2>
+<p>Участь — 5 Robux.</p>
+<p>Донат організатору через PLS DONATE. Запрошення на сервер організатор надішле ближче до початку.</p>
+<p>Будь ласка, не надсилай нікому свій пароль.</p>
+</section>
+
+<section class="card">
+<h2>🎵 Музична зона</h2>
+<p>Увімкни музику просто на сайті:</p>
+<iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/GFvY8B5Ndmc" title="Музика 1" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+<iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/U5YFv7VxpYg" title="Музика 2" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section class="card">
+<h2>🧑‍💼 Хочеш бути працівником?</h2>
+<p>Заповни заявку нижче!</p>
+<button onclick="document.getElementById('application').classList.toggle('hidden')">Хочу бути працівником</button>
+<form id="application" class="hidden" onsubmit="event.preventDefault();document.getElementById('result').textContent='Заявку заповнено! Зараз вона ще не надсилається організатору. Зроби скриншот і передай його організатору.';">
+<label>Твій нік у Roblox</label>
+<input required placeholder="Введи свій Roblox-нік">
+<label>Скільки тобі років?</label>
+<input required type="number" min="1" max="99" placeholder="Вік">
+<label>На яку посаду хочеш?</label>
+<select required>
+<option value="">Обери посаду</option>
+<option>Помічник</option>
+<option>Будівельник</option>
+<option>Аніматор</option>
+<option>Адміністратор</option>
+</select>
+<label>Чому хочеш працювати в таборі?</label>
+<textarea required rows="3" placeholder="Напиши кілька слів"></textarea>
+<button type="submit">Перевірити заявку</button>
+<p id="result"></p>
+</form>
+</section>
+</main>
+
+<footer>© Arseniolys Elite Camp • Brookhaven 🎮</footer>
+</body>
+</html>
